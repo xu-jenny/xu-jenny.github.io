@@ -24,26 +24,32 @@
 	</head>
 	<body>
 		<!-- Navigation -->
-		<div id="toc-holder" class="toc-holder nav">
+		<!--<div id="toc-holder" class="toc-holder nav">
 			<a href="#" class="toc-link" id="toc-link"><span class="">☰</span></a>
 			<ul id="toc" class="toc toc-up" style="top: -310px;">
 				<li class="toc-h1"><a href="#about">About</a></li>
 				<li class="toc-h1"><a href="#resume">Résumé</a></li>
 				<li class="toc-h1"><a href="#work">Projects</a></li>
 			</ul>
-		</div>
+		</div>-->
 
 		<div id="page-wrapper">
 			<!-- Header -->
 			<div id="header">
 				<div class="inner name"><a href="#illustration">Jenny Xu</a></div>
-				<div class="nav">
+				 <div class="dropdown toc-holder" id="toc-holder" style="position:absolute; top:10; right:40;">
+					<button class="dropbtn"><a href="#" class="toc-link" id="toc-link"><span style="font-size:35px;">☰</span></a></button>
 					<div class="dropdown-content">
+					 	<a href="#about">About</a>
+						<a href="#skillz">Skills</a>
+						<a href="#resume">Resumé</a>
+						<a href="#work">Projects</a>
+					</div>
+				  </div>
+				<div class="nav">
+					<div class="dropdown-content"><a href="#"><span class="">☰</span></a>
 						<ul class="mobile-nav">
-						<li class="mobile-header"><a href="#about">About</a></li>
-						<li class="mobile-header"><a href="#skillz">Skills</a></li>
-						<li class="mobile-header"><a href="#resume">Resumé</a></li>
-						<li class="mobile-header"><a href="#work">Projects</a></li></ul>
+
 					</div>
 				</div>
 			</div>
@@ -320,46 +326,6 @@
 				</span>
 			</div></div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-		<script src="js/jquery.fixedTOC.js?v=3.0"></script>
-		<script src="dist/jquery.magnific-popup.js?v=0.9.8"></script>
-		<script type="text/javascript">
-		 $(document).ready(function() {
-		        $('.image-popup-no-margins').magnificPopup({
-		          type: 'image',
-		          closeOnContentClick: true,
-		          closeBtnInside: false,
-		          fixedContentPos: true,
-		          mainClass: 'mfp-no-margins mfp-with-zoom', // Class to remove default margin from left and right side
-		          image: {
-		            verticalFit: true
-		          },
-		          zoom: {
-		            enabled: true,
-		            duration: 300 // Duration variable also in CSS
-		          }
-		        });
-
-		         $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		          disableOn: 700,
-		          type: 'iframe',
-		          mainClass: 'mfp-fade',
-		          removalDelay: 160,
-		          preloader: false,
-
-		          fixedContentPos: false
-		        });
-
-		        $('.simple-ajax-popup-align-top').magnificPopup({
-		          type: 'ajax',
-		          alignTop: true,
-		          overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
-		        });
-
-		        $('.simple-ajax-popup').magnificPopup({
-		          type: 'ajax'
-		        });
-		      });
-		</script>
 		<script>
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-1965499-1']);
