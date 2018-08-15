@@ -23,6 +23,33 @@ a img {
   border: none;
 }
 
+.dropdown-content{
+	display:none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.nav:hover .dropdown-content{
+	display:block;
+}
+
+
 
 .emoji {
     display: inline-block;
@@ -156,8 +183,8 @@ a img {
 #console .emoji{
 	height: 20px;
 	width: 20px;
-	padding-left: 10px;
-	margin-top: -3px;
+	padding-left: 4px;
+	margin-top: -2px;
 }
 
 span.answer {
@@ -358,11 +385,16 @@ img.icon:hover {
 
 #work{
   background: #eee;
-  height: 3000;
+  height: 2500;
   margin-top: -30px;
   padding: 60px 0 60px 0;
   font-size: 26px;
   line-height: 40px;
+}
+
+#work .desc{
+	text-align: center;
+	font-size: 18px;
 }
 
 .project-thumb{
